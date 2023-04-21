@@ -9,7 +9,7 @@ app.appendChild(novoElemento);
 
 
 
-//teste pardrao
+//teste padrao
 
 financas = [{"saida":{"casa": "150", "agua": 50, "luz":130}, "entrada":{"salario": 1500, "comissao": 200}}];
 
@@ -34,6 +34,26 @@ const fina = {
 
 console.log(fina.entrada.salario);
 
+
+cliente = [];    //cria uma array vazia
+
+cliente.push({'nome': 'Alex', 'rg':'41878693', 'filhos':['filho1','filho2']})    //adiona dados na array vazia
+cliente.push({'nome':'Virginia','rg':'4546777', 'filhos':['filhoVih1','filhoVih2']})
+
+//delete carro[0].marca;       // delete uma informação de uma array
+
+
+//console.log(carro);
+
+function procurar(carro){
+    return carro.cor === 'red';
+
+
+}
+
+//console.log(carro);
+
+//console.log(carro.findIndex(procurar));
 
 
 
