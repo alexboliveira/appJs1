@@ -37,8 +37,8 @@ console.log(fina.entrada.salario);
 
 cliente = [];    //cria uma array vazia
 
-cliente.push({'nome': 'Alex', 'rg':'41878693', 'filhos':['filho1','filho2']})    //adiona dados na array vazia
-cliente.push({'nome':'Virginia','rg':'4546777', 'filhos':['filhoVih1','filhoVih2']})
+cliente.push({'nome': 'pessoa1', 'rg':'111111', 'filhos':['filho1p1','filho2p1']})    //adiona dados na array vazia
+cliente.push({'nome':'pessoa2','rg':'222222', 'filhos':['filho1p2','filho2p2']})
 
 //delete carro[0].marca;       // delete uma informação de uma array
 
