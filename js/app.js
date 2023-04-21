@@ -57,6 +57,8 @@ function somaVal(item){
 
 console.log(fin2.map(somaVal));
 console.log(fin2[0].descricao);
+
+//parece que o map funciona como uma especie de podermos manusear dados sem mexer nos dados orinais, podemos reestrurar, usar os dados do nosso jeito mas sem alterar a fonte. 
 // fim teste do map
 
 
@@ -73,4 +75,6 @@ function myFunc(maior, menores) {
 }
 
 
+
+//parece que o reduce o forte é manusear numeros, fazer uma soma é algo completamente facil, mas tenho algumas duvidas no processo
 //fim teste do reduce
