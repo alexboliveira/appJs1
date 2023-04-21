@@ -66,8 +66,10 @@ console.log("reduce");
 const numbers = [175, 50, 25];
 console.log(numbers.reduce(myFunc));
 
-function myFunc(total, num) {
-  return total + num;
+function myFunc(maior, menores) {
+  return maior + menores // vai retornar a soma de todos os numeros da array ? buguei, kkkkk
+  //return menores;  //vai retornar 25
+  //return maior;  //vai retornar 175
 }
 
 
