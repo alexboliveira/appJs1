@@ -78,3 +78,22 @@ function myFunc(maior, menores) {
 
 //parece que o reduce o forte é manusear numeros, fazer uma soma é algo completamente facil, mas tenho algumas duvidas no processo
 //fim teste do reduce
+
+
+
+
+// teste o filter
+console.log("filter");
+var numerosFilter = [1,2,3,4,5,6,7,8,9];
+
+console.log(numerosFilter.filter(funFilter));
+function funFilter(item){
+    return item <=3;
+
+}
+
+
+
+// como o proprio nome diz o filter filtra.
+
+// fim teste do filter
