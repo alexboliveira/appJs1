@@ -134,7 +134,26 @@ table th{
 /*Lado Direito*/
 .ld{
     min-width: 200px;
-    height: calc(100vh - 4rem);
-    background-color: white;
+    height: calc(100vh - 10rem);
+    background-color: none;
     padding: 2rem;
+    padding-top: 8rem;
 }
+
+
+
+.boxResumo{
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.9rem;
+    margin-top: 1rem;
+
+}
+
+.boxResumo p:nth-of-type(2){
+    font-size: 20px;
+}
+

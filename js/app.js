@@ -313,6 +313,28 @@ novoElemento.setAttribute("class","ld");
 app.appendChild(novoElemento);
 
 
+const resumoDados = [
+    {descricao: "Receita do mes", valor: "8.000,00"},
+    {descricao: "Gastos planejados", valor: "6.400,00"},
+    {descricao: "Balanço planejado", valor: "1.600,00"},
+    {descricao: "Economia planejada", valor: "20%"}
+]
+
+function resumoView(item){
+    app = document.querySelector("#app > div.ld");
+    novoElemento = document.createElement("div");
+    novoElemento.innerHTML = `<div class='boxResumo'><p>${[item.descricao]}</p><p>R$ ${[item.valor]}</p></div>`;
+    app.appendChild(novoElemento);
+
+   
+
+
+
+}
+
+resumoDados.map(resumoView);
+
+
 
 
 
