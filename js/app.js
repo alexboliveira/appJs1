@@ -197,25 +197,38 @@ app.appendChild(novoElemento);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//tabela
 app = document.querySelector("#app > div.view");
-novoElemento = document.createElement("ul");
-novoElemento.setAttribute("class", "label");
+novoElemento = document.createElement("table");
+//novoElemento.setAttribute("class", "label");
 app.appendChild(novoElemento);
 
-
-app = document.querySelector("#app > div.view > ul");
+app = document.querySelector("#app > div.view > table");
+novoElemento = document.createElement("tr");
+app.appendChild(novoElemento);
 
 const labelMain = [
     {label: "Situação"},
     {label: "Categoria"},
     {label: "Meta"},
     {label: "Valor Gasto"},
-    {label: "Resultado"},
-    {label: "Ações"}
+    {label: "Resultado"}
 ]
 
 function viewLabelMain(item){
-    novoElemento = document.createElement("li");
+    app = document.querySelector("#app > div.view > table > tr");
+    novoElemento = document.createElement("th");
     novoElemento.innerText = [item.label];
     app.appendChild(novoElemento);
 }
@@ -226,14 +239,6 @@ labelMain.map(viewLabelMain);
 
 
 
-
-app = document.querySelector("#app > div.view");
-novoElemento = document.createElement("ul");
-novoElemento.setAttribute("class", "label");
-app.appendChild(novoElemento);
-
-
-app = document.querySelector("#app > div.view > ul:nth-child(4)");
 
 const dadosMe = [
     {
@@ -262,9 +267,38 @@ const dadosMe = [
 ]
 
 function viewLabelDados(item){
-    novoElemento = document.createElement("li");
+    var rodada = 2;
+    //app = document.querySelector("#app > div.view > table");
+    app = document.querySelector("#app > div.view > table");
+    novoElemento = document.createElement("tr");
+    app.appendChild(novoElemento);
+
+
+    novoElemento = document.createElement("td");
     novoElemento.innerText = [item.situacao];
     app.appendChild(novoElemento);
+
+    novoElemento = document.createElement("td");
+    novoElemento.innerText = [item.categoria];
+    app.appendChild(novoElemento);
+
+    novoElemento = document.createElement("td");
+    novoElemento.innerText = [item.meta];
+    app.appendChild(novoElemento);
+
+    novoElemento = document.createElement("td");
+    novoElemento.innerText = [item.valorgasto];
+    app.appendChild(novoElemento);
+
+    novoElemento = document.createElement("td");
+    novoElemento.innerText = [item.Resultado];
+    app.appendChild(novoElemento);
+
+    rodada++;
+
+
+
+
 }
 
 dadosMe.map(viewLabelDados);

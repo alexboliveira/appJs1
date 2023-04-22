@@ -92,3 +92,26 @@ body{
 .label li{
 
 }
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  table-layout: fixed;
+  
+
+
+}
+
+table td, table th{
+    background-color: white;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+table th{
+    background-color: black;
+    color: white;
+}
