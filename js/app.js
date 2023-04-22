@@ -267,7 +267,7 @@ const dadosMe = [
 ]
 
 function viewLabelDados(item){
-    var rodada = 2;
+
     //app = document.querySelector("#app > div.view > table");
     app = document.querySelector("#app > div.view > table");
     novoElemento = document.createElement("tr");
@@ -294,7 +294,7 @@ function viewLabelDados(item){
     novoElemento.innerText = [item.Resultado];
     app.appendChild(novoElemento);
 
-    rodada++;
+
 
 
 
