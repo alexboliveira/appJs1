@@ -114,6 +114,8 @@ function funFilter(item){
 
 //app
 
+
+//menu lateral
 app = document.getElementById("app");
 novoElemento = document.createElement("div");
 novoElemento.setAttribute("class","main");
@@ -160,6 +162,123 @@ function mostrarMenu(item){
     app.appendChild(novoElemento);
   
 }
+
+
+
+//centro
+app = document.querySelector("#app");
+novoElemento = document.createElement("div");
+novoElemento.setAttribute("class", "view")
+app.appendChild(novoElemento);
+
+
+
+app = document.querySelector("#app > div.view");
+novoElemento = document.createElement("p");
+novoElemento.setAttribute("class","btn");
+novoElemento.innerText = "Planejamento Mensal";
+app.appendChild(novoElemento);
+
+app = document.querySelector("#app > div.view");
+novoElemento = document.createElement("div");
+novoElemento.setAttribute("class","boxData");
+app.appendChild(novoElemento);
+
+
+app = document.querySelector("#app > div.view > div");
+novoElemento = document.createElement("div");
+app.appendChild(novoElemento);
+
+app = document.querySelector("#app > div.view > div > div");
+novoElemento = document.createElement("p");
+novoElemento.setAttribute("class", "btn_i");
+novoElemento.innerText = "Abril 2022";
+app.appendChild(novoElemento);
+
+
+
+app = document.querySelector("#app > div.view");
+novoElemento = document.createElement("ul");
+novoElemento.setAttribute("class", "label");
+app.appendChild(novoElemento);
+
+
+app = document.querySelector("#app > div.view > ul");
+
+const labelMain = [
+    {label: "Situação"},
+    {label: "Categoria"},
+    {label: "Meta"},
+    {label: "Valor Gasto"},
+    {label: "Resultado"},
+    {label: "Ações"}
+]
+
+function viewLabelMain(item){
+    novoElemento = document.createElement("li");
+    novoElemento.innerText = [item.label];
+    app.appendChild(novoElemento);
+}
+
+labelMain.map(viewLabelMain);
+
+
+
+
+
+
+app = document.querySelector("#app > div.view");
+novoElemento = document.createElement("ul");
+novoElemento.setAttribute("class", "label");
+app.appendChild(novoElemento);
+
+
+app = document.querySelector("#app > div.view > ul:nth-child(4)");
+
+const dadosMe = [
+    {
+        situacao: "ok", 
+        categoria: "total",
+        meta: 6.400,
+        valorgasto: 0.00,
+        Resultado: 6.400
+    },
+
+    {
+        situacao: "ok", 
+        categoria: "total",
+        meta: 6.200,
+        valorgasto: 0.00,
+        Resultado: 6.200
+    },
+
+    {
+        situacao: "ok", 
+        categoria: "total",
+        meta: 6.100,
+        valorgasto: 0.00,
+        Resultado: 6.100
+    }
+]
+
+function viewLabelDados(item){
+    novoElemento = document.createElement("li");
+    novoElemento.innerText = [item.situacao];
+    app.appendChild(novoElemento);
+}
+
+dadosMe.map(viewLabelDados);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

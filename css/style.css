@@ -7,6 +7,10 @@
 body{
     background-color: rgb(237,243,251);
 }
+
+#app{
+    display: flex;
+}
 .main{
 
     width: 250px;
@@ -29,6 +33,7 @@ body{
 .main .mainHeader h2{
     text-align: right;
     font-size: 12px;
+    margin-right: 40px;
 }
 
 
@@ -38,4 +43,52 @@ body{
 
 .main ul li{
     padding: 0.5rem;
+}
+
+
+.view{
+    padding: 2rem;
+    width: 800px;
+    background-color: none;
+}
+
+.btn{
+    background-color: rgb(101,21,221);
+    padding: 1rem;
+    border-radius: 0.9rem;
+    color: white;
+    display: inline-block;
+
+
+}
+
+.btn_i{
+    color: rgb(101,21,221);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2em;
+    padding-right: 2rem;
+    border-radius: 5rem;
+    border: 2px solid rgb(101,21,221);
+}
+
+.boxData{
+    margin-top: 4rem;
+    background-color: white;
+    display: flex;
+    width: calc(100% - 2rem);
+    justify-content: center;
+    padding: 1rem;
+}
+
+.label{
+    display: flex;
+    width: calc(100% - 2rem);
+    background-color: none;
+    padding: 1rem;
+    font-weight: bold;
+    justify-content: space-around;
+}
+.label li{
+
 }
