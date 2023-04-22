@@ -306,6 +306,16 @@ dadosMe.map(viewLabelDados);
 
 
 
+//lado direito
+app = document.querySelector("#app");
+novoElemento = document.createElement("div");
+novoElemento.setAttribute("class","ld");
+app.appendChild(novoElemento);
+
+
+
+
+
 
 
 

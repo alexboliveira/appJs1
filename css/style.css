@@ -10,10 +10,13 @@ body{
 
 #app{
     display: flex;
+    width: auto;
+    justify-content: center;
+    margin: 0 auto;
 }
 .main{
 
-    width: 250px;
+    
     height: calc(100vh - 4rem);
     background-color: white;
     padding: 2rem;
@@ -22,6 +25,8 @@ body{
 
 
 .main .mainHeader{
+    width: 200px;
+    /*aqui altera o tamanho do box*/
    
     
 }
@@ -33,7 +38,7 @@ body{
 .main .mainHeader h2{
     text-align: right;
     font-size: 12px;
-    margin-right: 40px;
+    margin-right: 90px;
 }
 
 
@@ -46,9 +51,11 @@ body{
 }
 
 
+/*centro*/
+
 .view{
     padding: 2rem;
-    width: 800px;
+    width: auto;
     background-color: none;
 }
 
@@ -119,4 +126,15 @@ table tr:nth-of-type(1){
 table th{
     background-color: rgb(101,21,221);
     color: white;
+}
+
+
+
+
+/*Lado Direito*/
+.ld{
+    min-width: 200px;
+    height: calc(100vh - 4rem);
+    background-color: white;
+    padding: 2rem;
 }
