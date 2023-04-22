@@ -107,7 +107,7 @@ table{
 table td, table th{
     background-color: white;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid rgb(101,21,221);
     padding: 0.5rem;
 }
 
