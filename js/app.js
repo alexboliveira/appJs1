@@ -1,19 +1,9 @@
-app = document.getElementById("app");
-novoElemento = document.createElement("div");
-novoElemento.setAttribute("class","header");
-novoElemento.innerHTML = "HEADER";
-app.appendChild(novoElemento);
-
-
-
-
-
 
 //teste padrao
 
 financas = [{"saida":{"casa": "150", "agua": 50, "luz":130}, "entrada":{"salario": 1500, "comissao": 200}}];
 
-console.log(financas[0].entrada.salario);
+//console.log(financas[0].entrada.salario);
 
 
 
@@ -32,7 +22,7 @@ const fina = {
 
 }
 
-console.log(fina.entrada.salario);
+//console.log(fina.entrada.salario);
 
 
 cliente = [];    //cria uma array vazia
@@ -75,8 +65,8 @@ function somaVal(item){
 
 
 
-console.log(fin2.map(somaVal));
-console.log(fin2[0].descricao);
+//console.log(fin2.map(somaVal));
+//console.log(fin2[0].descricao);
 
 //parece que o map funciona como uma especie de podermos manusear dados sem mexer nos dados orinais, podemos reestrurar, usar os dados do nosso jeito mas sem alterar a fonte. 
 // fim teste do map
@@ -84,9 +74,9 @@ console.log(fin2[0].descricao);
 
 
 // teste do reduce
-console.log("reduce");
+//console.log("reduce");
 const numbers = [175, 50, 25];
-console.log(numbers.reduce(myFunc));
+//console.log(numbers.reduce(myFunc));
 
 function myFunc(maior, menores) {
   return maior + menores // vai retornar a soma de todos os numeros da array ? buguei, kkkkk
@@ -103,10 +93,10 @@ function myFunc(maior, menores) {
 
 
 // teste o filter
-console.log("filter");
+//console.log("filter");
 var numerosFilter = [1,2,3,4,5,6,7,8,9];
 
-console.log(numerosFilter.filter(funFilter));
+//console.log(numerosFilter.filter(funFilter));
 function funFilter(item){
     return item <=3;
 
@@ -117,3 +107,64 @@ function funFilter(item){
 // como o proprio nome diz o filter filtra.
 
 // fim teste do filter
+
+
+
+
+
+//app
+
+app = document.getElementById("app");
+novoElemento = document.createElement("div");
+novoElemento.setAttribute("class","main");
+app.appendChild(novoElemento);
+
+app = document.querySelector("#app > div");
+novoElemento =  document.createElement("div");
+novoElemento.setAttribute("class","mainHeader");
+app.appendChild(novoElemento);
+
+
+app =  document.querySelector("#app > div > div");
+novoElemento = document.createElement("h1");
+novoElemento.innerText = "Mobills";
+app.appendChild(novoElemento);
+
+app =  document.querySelector("#app > div > div");
+novoElemento = document.createElement("h2");
+novoElemento.innerText = "by Toro";
+app.appendChild(novoElemento);
+
+
+
+app =  document.querySelector("#app > div > div");
+novoElemento = document.createElement("ul");
+app.appendChild(novoElemento);
+
+
+
+
+const menu = [
+    {texto: "Dashboard"},
+    {texto: "Transações"},
+    {texto: "Cartões de credito"},
+    {texto: "Contas"},
+    {texto: "Relatorios"} 
+];
+
+menu.map(mostrarMenu);
+function mostrarMenu(item){
+    app = document.querySelector("#app > div > div > ul")
+    novoElemento = document.createElement("li");
+    novoElemento.innerText = [item.texto];
+    app.appendChild(novoElemento);
+  
+}
+
+
+
+
+
+
+
+
