@@ -10,7 +10,7 @@ body{
 .main{
 
     width: 250px;
-    height: 100vh;
+    height: calc(100vh - 4rem);
     background-color: white;
     padding: 2rem;
     display: flex;
