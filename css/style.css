@@ -140,6 +140,9 @@ table th{
 
 
 .boxResumo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -159,3 +162,10 @@ table th{
     font-size: 20px;
 }
 
+img{
+    height:  15px;
+    margin-left: 1rem;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 50% 50%;
+}

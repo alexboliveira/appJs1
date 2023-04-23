@@ -314,11 +314,12 @@ function resumoView(item){
      
      app = document.querySelector(".ld");
      novoElemento = document.createElement("div");
+     novoElemento.setAttribute("class","boxResumo");
      app.appendChild(novoElemento);
 
      app = document.querySelector(".ld").children[x];
      novoElemento = document.createElement("div");
-     novoElemento.setAttribute("class","boxResumo");
+     
      app.appendChild(novoElemento);
 
      app = document.querySelector(".ld").children[x].children[0];
@@ -330,6 +331,13 @@ function resumoView(item){
      novoElemento = document.createElement("p");
      novoElemento.innerText = [item.valor];
      app.appendChild(novoElemento);
+
+     app = document.querySelector(".ld").children[x];
+     novoElemento = document.createElement("img");
+     novoElemento.src = "img/arrow-up-solid.svg";
+     app.appendChild(novoElemento);
+
+
 
 
 
