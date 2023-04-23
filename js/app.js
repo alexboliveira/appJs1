@@ -129,7 +129,7 @@ app.appendChild(novoElemento);
 
 app =  document.querySelector("#app > div > div");
 novoElemento = document.createElement("h1");
-novoElemento.innerText = "Mobills";
+novoElemento.innerText = "Mobilete";
 app.appendChild(novoElemento);
 
 app =  document.querySelector("#app > div > div");
@@ -194,17 +194,6 @@ novoElemento = document.createElement("p");
 novoElemento.setAttribute("class", "btn_i");
 novoElemento.innerText = "Abril 2022";
 app.appendChild(novoElemento);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -294,17 +283,9 @@ function viewLabelDados(item){
     novoElemento.innerText = [item.Resultado];
     app.appendChild(novoElemento);
 
-
-
-
-
-
 }
 
 dadosMe.map(viewLabelDados);
-
-
-
 
 //lado direito
 app = document.querySelector("#app");
@@ -320,11 +301,53 @@ const resumoDados = [
     {descricao: "Economia planejada", valor: "20%"}
 ]
 
+var x =0; /*usei pra fazer um contado do resumoView*/
 function resumoView(item){
+
+    
+    /*  funcional
     app = document.querySelector("#app > div.ld");
     novoElemento = document.createElement("div");
     novoElemento.innerHTML = `<div class='boxResumo'><p>${[item.descricao]}</p><p>R$ ${[item.valor]}</p></div>`;
     app.appendChild(novoElemento);
+     funcional*/
+     
+     app = document.querySelector(".ld");
+     novoElemento = document.createElement("div");
+     app.appendChild(novoElemento);
+
+     app = document.querySelector(".ld").children[x];
+     novoElemento = document.createElement("div");
+     novoElemento.setAttribute("class","boxResumo");
+     app.appendChild(novoElemento);
+
+     app = document.querySelector(".ld").children[x].children[0];
+     novoElemento = document.createElement("p");
+     novoElemento.innerText = [item.descricao];
+     app.appendChild(novoElemento);
+
+     app = document.querySelector(".ld").children[x].children[0];
+     novoElemento = document.createElement("p");
+     novoElemento.innerText = [item.valor];
+     app.appendChild(novoElemento);
+
+
+
+
+
+
+
+
+
+
+     x++;
+
+
+
+
+
+
+    
 
    
 
