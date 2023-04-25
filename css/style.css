@@ -133,7 +133,7 @@ table th{
     min-width: 200px;
     height: calc(100vh - 10rem);
     background-color: none;
-    padding: 2rem;
+    /*padding: 2rem;*/
     padding-top: 8rem;
 }
 
